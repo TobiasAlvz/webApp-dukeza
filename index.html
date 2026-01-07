@@ -1,212 +1,343 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-     <!--Google Fontes-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
-    <!-- Fonte icones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-   
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>App Dukeza</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <header class="colored-section" id="title">
-      
-        <div class="container-fluid">
-            <!--navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">TipsCode</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-               
-               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                   <ul class="navbar-nav ml-auto">
-                       <li class="nav-item">
-                           <a class="nav-link" href="#footer">
-                               Contato
-                           </a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#pricing">
-                               Plano
-                           </a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#cta">
-                               Download
-                           </a>
-                       </li>
+        <title>CatMatch Ultra</title>
 
-                   </ul>     
-               </div>
-              
-           </nav>
-           <!--Fim navbar-->
-    
-             <!--Titilo-->
-            
-             <div class="row">
-                 <div class="col-lg-6">
-                     <h1 class="big-heading">Encontre agora mesmo um gatinho para ser seu melhor amigo</h1>
-                     <button type="button" class="download-button btn btn-dark btn-lg"> <i class="fab fa-apple"> Download</i></button>
-                     <button type="button" class="download-button btn btn-outline-light btn-lg"><i class="fab fa-google-play"> Download</i></button>
-                 </div>
-     
-                 <figure class="col-lg-6">
-                     <img class="title-image" src="./img/Gatinho.png" alt="Gatnho Feliz" />
-                 </figure>
+        <!-- Bootstrap 5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
 
-             </div>
-            
-           
-        </div>
-          
-    </header>
+        <!-- Bootstrap Icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet">
 
-    <section class="white-section" id="features">
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet">
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="feature-box col-lg-4">
-                    <i class="icon fas fa-check-circle fa-4x"></i>
-                    <h3 class="features-title">Fácil de usar.</h3>
-                    <p>Tão fácil de usar que até seu cachorro poderia fazer isso..</p>
-                </div>
-        
-                <div class="feature-box col-lg-4">
-                    <i class="icon fas fa-bullseye fa-4x"></i>
-                    <h3 class="features-title">Os melhores Gatos</h3>
-                    <p>Temos os melhores gatinhos para você.</p>
-                </div>
-        
-                <div class="feature-box col-lg-4">
-                    <i class="icon fas fa-heart fa-4x"></i>
-                    <h3 class="features-title">Gato ama!!.</h3>
-                    <p>Encontre o gatinho ideal para você..</p>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="100"
+        tabindex="0">
+
+        <!-- NAVBAR -->
+        <nav id="menu"
+            class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">CatMatch Ultra</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto gap-3 align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link"
+                                href="#hero">Início</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#features">Diferenciais</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#stats">Indicadores</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#steps">Fluxo</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#tables">Dados</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#faq">FAQ</a></li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#login">
+                                Acessar
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <section class="colored-section" id="testimonials">
+        <!-- HERO -->
+        <header id="hero" class="hero-gradient text-white py-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="badge badge-soft mb-3">Projeto educacional
+                            Bootstrap</span>
 
-        <!-- Carousel -->
-        <div id="testimonial-carousel" class="carousel slide" data-ride="carousel"  >
-            <div class="carousel-inner">
-              <div class="carousel-item active container-fluid">
-                <h2 class="testimonial-text">Muito bom, o sistema é ótimo para encontrar seu gato.</h2>
-                <img class="testimonial-image" src="img/Alisson.png" alt="Alisson" />
-                <em>Juazeiro, Ceará</em>
-              </div>
-              <div class="carousel-item container-fluid">
-                <h2 class="testimonial-text">Meu app é muto bom, um dos melhores do mercado</h2>
-                <img class="testimonial-image" src="img/Gato-preto.png" alt="Dukeza" />
-                <em>Crato, Ceará</em>
-              </div>
-            </div>
+                        <h1 class="display-4 fw-bold mb-3">
+                            Um exemplo real de interface moderna e responsiva
+                        </h1>
 
-            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
+                        <p class="lead mb-4">
+                            O CatMatch Ultra foi desenvolvido para demonstrar,
+                            de forma prática,
+                            como construir layouts profissionais utilizando
+                            Bootstrap 5,
+                            explorando componentes avançados e boas práticas
+                            visuais.
+                        </p>
 
-        <!-- Fim Carousel-->
+                        <div class="d-flex gap-3 flex-wrap">
+                            <button class="btn btn-light btn-lg">Explorar
+                                layout</button>
+                            <button class="btn btn-outline-light btn-lg">Ver
+                                componentes</button>
+                        </div>
+                    </div>
 
-    </section>
-
-    <section class="colored-section" id="press">
-        <img class="press-logo" src="img/1.png" alt="logo1" />
-        <img class="press-logo" src="img/2.png" alt="logo2" />
-        <img class="press-logo" src="img/3.png" alt="logo3" />
-        <img class="press-logo" src="img/4.png" alt="logo4" />
-
-    </section>
-
-    <section class="white-section" id="pricing">
-
-        <h2 class="section-heading">Um plano para as necessidades de cada Gato</h2>
-        <p>Planos de preços simples e acessíveis para você e seu Gato.</p>
-
-        <div class="row">
-            <div class="pricing-column col-lg-4 col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Pé duro 2 vezes kk</h3>
-                    </div>   
-                    <div class="card-body">
-                        <h2 class="price-text">Grátis</h2>
-                        <p>5 curtidas por dia</p>
-                        <p>10 mensagens por dia</p>
-                        <p>40 Curtidas por mês</p>
-                        <button class="btn btn-lg btn-block btn-outline-dark" type="button">inscreva-se</button>
+                    <div class="col-lg-6 text-center">
+                        <img src="https://placekitten.com/420/420"
+                            class="img-fluid rounded shadow"
+                            alt="Imagem ilustrativa">
                     </div>
                 </div>
             </div>
+        </header>
 
-            <div class="pricing-column col-lg-4 col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Pé duro</h3>
-                    </div>   
-                    <div class="card-body">
-                        <h2 class="price-text">R$25 / mês</h2>
-                        <p>Curtidas ilimitadas</p>
-                        <p>Mensagens ilimitadas</p>
-                        <p>Acesso pleno do app</p>
-                        <button class="btn btn-lg btn-block btn-dark" type="button">inscreva-se</button>
+        <!-- FEATURES -->
+        <section id="features" class="py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-5">Diferenciais do projeto</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <i
+                            class="bi bi-layout-text-window fs-1 text-primary"></i>
+                        <h5 class="fw-bold mt-3">Layout profissional</h5>
+                        <p>
+                            Estrutura organizada, espaçamentos consistentes e
+                            hierarquia visual clara,
+                            simulando aplicações reais do mercado.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <i class="bi bi-mortarboard-fill fs-1 text-success"></i>
+                        <h5 class="fw-bold mt-3">Foco educacional</h5>
+                        <p>
+                            Cada seção foi pensada para servir como exemplo
+                            prático
+                            de um componente ou padrão do Bootstrap.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <i class="bi bi-shield-check fs-1 text-warning"></i>
+                        <h5 class="fw-bold mt-3">Boas práticas</h5>
+                        <p>
+                            Código limpo, sem JavaScript customizado,
+                            priorizando reutilização e legibilidade.
+                        </p>
                     </div>
                 </div>
             </div>
-    
-            <div class="pricing-column col-lg-4 col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Cianes</h3>
-                    </div>   
-                    <div class="card-body">
-                        <h2 class="price-text">R$50,00 / mês</h2>
-                        <p>Lista de prioridades</p>
-                        <p>Curtidas ilimitadas</p>
-                        <p>Acesso Completo ao APP</p>
-                        <button class="btn btn-lg btn-block btn-dark" type="button">inscreva-se</button>
+        </section>
+
+        <!-- STATS -->
+        <section id="stats" class="bg-light py-5">
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <h2 class="fw-bold text-primary">120+</h2>
+                        <p>Componentes demonstrados</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="fw-bold text-success">100%</h2>
+                        <p>Responsivo</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="fw-bold text-warning">0</h2>
+                        <p>JavaScript manual</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="fw-bold text-danger">∞</h2>
+                        <p>Possibilidades didáticas</p>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <!-- STEPS -->
+        <section id="steps" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-5">Fluxo lógico do
+                    sistema</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card text-center shadow-sm h-100">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">1</span>
+                                <h5 class="fw-bold">Entrada no sistema</h5>
+                                <p>
+                                    Simula autenticação e navegação inicial
+                                    usando Offcanvas e formulários.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center shadow-sm h-100">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">2</span>
+                                <h5 class="fw-bold">Visualização de dados</h5>
+                                <p>
+                                    Uso de tabelas, badges e estados visuais
+                                    para representar informações.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center shadow-sm h-100">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">3</span>
+                                <h5 class="fw-bold">Conclusão do fluxo</h5>
+                                <p>
+                                    Encerramento visual com feedbacks,
+                                    alertas e chamadas para ação.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALERTS -->
+        <section class="container py-5">
+            <div class="alert alert-success alert-dismissible fade show">
+                <strong>Perfeito!</strong> Interface carregada com sucesso para
+                demonstração.
+                <button class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+
+            <div class="alert alert-info">
+                Ambiente configurado para <strong>uso educacional</strong>
+                <span class="badge bg-dark ms-2">Bootstrap 5</span>
+            </div>
+        </section>
+
+        <!-- PROGRESS -->
+        <section class="container py-5">
+            <h2 class="fw-bold text-center mb-4">Progresso ilustrativo</h2>
+
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 100%">
+                    Estrutura criada
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 65%">
+                    Estilização aplicada
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <section id="faq" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-4">Perguntas frequentes</h2>
+
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                Este projeto usa JavaScript personalizado?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Não. Toda a interatividade vem exclusivamente do
+                                Bootstrap Bundle.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                Posso reutilizar este projeto em aula?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Sim. Ele foi pensado exatamente para fins
+                                didáticos e demonstrações práticas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-dark text-white py-5 text-center">
+            <div class="container">
+                <h2 class="fw-bold mb-3">Pronto para uso em sala de aula</h2>
+                <p class="mb-4">
+                    Um exemplo completo, limpo e profissional
+                    para ensinar Bootstrap de verdade.
+                </p>
+                <button class="btn btn-primary btn-lg">Usar como base</button>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-black text-white py-4">
+            <div class="container text-center">
+                <p class="mb-2">© 2026 CatMatch Ultra • Projeto educacional</p>
+                <div class="d-flex justify-content-center gap-3 fs-5">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                </div>
+            </div>
+        </footer>
+
+        <!-- OFFCANVAS -->
+        <div class="offcanvas offcanvas-end" id="login">
+            <div class="offcanvas-header">
+                <h5 class="fw-bold">Acesso ao sistema</h5>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control"
+                            placeholder="usuario@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Senha</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <button class="btn btn-primary w-100">Entrar</button>
+                </form>
+            </div>
         </div>
 
-    </section>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <section class="colored-section" id="cta">
-        <div class="container-fluid">
-            <h3 class="big-heading">Façs agora mesmo o downlod.</h3>
-            <button type="button" class="download-button btn btn-dark btn-lg"> <i class="fab fa-apple"> Download</i></button>
-            <button type="button" class="download-button btn btn-outline-light btn-lg"><i class="fab fa-google-play"> Download</i></button>
-        </div>
-
-    </section>
-    
-    
-    <footer class="white-section" id="footer">
-        <div class="container-fluid">
-            <i class="social-icon fab fa-instagram"></i>
-            <i class="social-icon fab fa-twitter"></i>
-            <i class="social-icon fab fa-facebook-f"></i>
-            <p>© Copyright 2022 AppDukeza</p>
-        </div>
-    </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
